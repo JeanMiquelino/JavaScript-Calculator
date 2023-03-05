@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main class="calculadora">
+        <h1>Calculadora</h1>
+        <p id="display"></p>
+        <table class="botoes">
+            <tr>
+                <td><button id="clean" onclick="limpar()">AC</button></td>
+                <td><button id="divisao" onclick="inserir('/')">/</button></td>
+                <td><button id="multiplicacao" onclick="inserir('*')">*</button></td>
+                <td><button id="back" onclick="back()"><</button></td>
+            </tr>
+            <tr>
+                <td><button id="7" onclick="inserir('7')">7</button></td>
+                <td><button id="8" onclick="inserir('8')">8</button></td>
+                <td><button id="9" onclick="inserir('9')">9</button></td>
+                <td><button id="subtracao" onclick="inserir('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="4" onclick="inserir('4')">4</button></td>
+                <td><button id="5" onclick="inserir('5')">5</button></td>
+                <td><button id="6" onclick="inserir('6')">6</button></td>
+                <td><button id="soma" onclick="inserir('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button id="1" onclick="inserir('1')">1</button></td>
+                <td><button id="2" onclick="inserir('2')">2</button></td>
+                <td><button id="3" onclick="inserir('3')">3</button></td>
+                <td rowspan="2"><button id="igual" onclick="calcular()">=</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="0" onclick="inserir('0')">0</button></td>
+                <td><button id="ponto" onclick="inserir('.')">.</button></td>
+        </table>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>
